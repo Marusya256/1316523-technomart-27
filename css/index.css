@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: black;
+  background-color: white;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.navigation-user{
+  text-align: right;
+}
+.button-user {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 11px 25px;
+  border: none;
+}
+header {
+  background-color: #f4f7f9;
+}
+.logo-header{
+  background-color: #ee3643;
+  padding: 13px 55px;
+}
+.main-menu {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #293449;
+}
+.main-menu li {
+  display: inline;
+  margin-right: 46px;
+  list-style: none;
+  text-align: right;
+}
+h1 {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  text-align: left;
+  color:#ee3643;
+  width: 196px;
+}
+.contact-header {
+  text-align: center;
+}
+.phone-header {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: left;
+  color:#ee3643;
+}
+.phone-header + p {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #32425c;
+}
+.navigation {
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #32425c;
+  list-style: none;
+  padding: 22px 22px;
+}
+.navigation li{
+  display: inline;
+  margin-right: 65px;
+}
+.product h3 {
+  font-family: "PT Sans Bold", sans-serif;
+}
+.info-contact{
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+.info-contact li{
+  font-size: 18px;
+  line-height: 20px;
+  text-align: left;
+  color: #000000;
+}
+.info-contact h2{
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+}
+.info-contact p {
+  font-family: "PT Sans", sans-serif;
+}
+.button-info-contact{
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ee3643;
+  padding: 10px 13px;
+  border: none;
+}
+
+.footer-info{
+  background-color: #32425c;
+  color: white;
+  padding: none;
+}
+.footer-info li {
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+}
+.footer-info .footer-list {
+  color: #ffd180;
+}
+.logo-footer{
+  background-color: #ee3643;
+  padding: 20px 41px;
+}
+.footer-contacts{
+  color:white;
+  background-color: #293449;
+}
+.footer-contacts li {
+  list-style: none;
+}
+.footer-contacts a {
+  color: #ffd180;
+}
