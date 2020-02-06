@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -9,13 +9,15 @@ body {
   background-color: white;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
-.navigation-user{
+
+.navigation-user {
   text-align: right;
 }
+
 .button-user {
   font-size: 21px;
   line-height: 21px;
@@ -25,25 +27,30 @@ a{
   padding: 11px 25px;
   border: none;
 }
+
 header {
   background-color: #f4f7f9;
 }
-.logo-header{
+
+.logo-header {
   background-color: #ee3643;
   padding: 13px 55px;
 }
+
 .main-menu {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
   background-color: #293449;
 }
+
 .main-menu li {
   display: inline;
   margin-right: 46px;
   list-style: none;
   text-align: right;
 }
+
 h1 {
   font-size: 16px;
   font-style: italic;
@@ -52,21 +59,25 @@ h1 {
   color:#ee3643;
   width: 196px;
 }
+
 .contact-header {
   text-align: center;
 }
+
 .phone-header {
   font-size: 21px;
   line-height: 21px;
   text-align: left;
   color:#ee3643;
 }
+
 .phone-header + p {
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: #32425c;
 }
+
 .navigation {
   font-size: 17px;
   line-height: 17px;
@@ -76,36 +87,66 @@ h1 {
   list-style: none;
   padding: 22px 22px;
 }
-.navigation li{
+
+.navigation li {
   display: inline;
   margin-right: 65px;
 }
-.product h3 {
-  font-family: "PT Sans Bold", sans-serif;
+
+.catalog-info {
+  background-color: #f4f7f9;
+  color: #000000;
 }
-.info-contact{
+
+.catalog-info h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-family:"Cuprum", 'Arial', sans-serif;
+  text-transform: uppercase;
+  padding-top: 67px;
+  padding-left: 130px;
+}
+
+.catalog-info p {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", 'Arial', sans-serif;
+  padding-bottom: 73px;
+  padding-left: 130px;
+  padding-right: 159px;
+}
+
+.product h3 {
+  font-family: "PT Sans Bold", 'Arial Bold', sans-serif;
+}
+
+.info-contact {
   font-size: 13px;
   line-height: 24px;
   text-align: left;
   color: #000000;
 }
-.info-contact li{
+
+.info-contact li {
   font-size: 18px;
   line-height: 20px;
   text-align: left;
   color: #000000;
 }
-.info-contact h2{
+
+.info-contact h2 {
   font-size: 30px;
   line-height: 30px;
   text-align: left;
   color: #000000;
   text-transform: uppercase;
 }
+
 .info-contact p {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", 'Arial', sans-serif;
 }
-.button-info-contact{
+
+.button-info-contact {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -115,30 +156,36 @@ h1 {
   border: none;
 }
 
-.footer-info{
+.footer-info {
   background-color: #32425c;
   color: white;
   padding: none;
 }
+
 .footer-info li {
   list-style: none;
   display: inline;
   margin-right: 20px;
 }
+
 .footer-info .footer-list {
   color: #ffd180;
 }
-.logo-footer{
+
+.logo-footer {
   background-color: #ee3643;
   padding: 20px 41px;
 }
-.footer-contacts{
+
+.footer-contacts {
   color:white;
   background-color: #293449;
 }
+
 .footer-contacts li {
   list-style: none;
 }
+
 .footer-contacts a {
   color: #ffd180;
 }
