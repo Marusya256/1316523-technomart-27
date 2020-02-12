@@ -11,13 +11,18 @@
     <header>
       <div class="main-menu">
         <img class="logo-header" src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт">
+        <form>
+          <label for="search">Поиск:</label>
+          <input type="search" name="search" id="search">
+        </form>
           <ul>
             <li><a href="">Закладки</a></li>
             <li><a href="">Корзина</a></li>
             <li><a href="">Оформить заказ</a></li>
           </ul>
         </div>
-        <section>
+        <div class="color-navigation">
+        <section class="info-header">
           <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <div class="contact-header">
           <a class="phone-header" href="tel:+78125550555">+7 (812) 555 05 55</a>
@@ -39,9 +44,10 @@
           <li><a href="">Контакты</a></li>
         </ul>
       </nav>
+    </div>
     </header>
 <main>
-      <section>
+      <section class="banner">
         <ul>
           <li>
             <h3>Материалы</h3>
@@ -80,7 +86,7 @@
         </div>
       </section>
       <section>
-      <div>
+      <div class="popular-product">
         <p>Популярные товары:</p>
         <a href="#">Все популярные товары</a>
       </div>
@@ -88,17 +94,17 @@
           <li>
             <h3><a href="#">Перфоратор BOSCH BFG 9000</a></h3>
             <img src="img/bosch-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
-            <p>32500 Р.</p>
+            <p><del>32500 Р.</del></p>
           </li>
           <li>
             <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
             <img src="img/bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-            <p>22500 Р.</p>
+            <p><del>22500 Р.</del></p>
           </li>
           <li>
             <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
             <img src="img/bosch-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-            <p>30500 Р.</p>
+            <p><del>30500 Р.</del></p>
           </li>
           <li>
             <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
@@ -107,11 +113,11 @@
         </ul>
       </section>
       <section>
-        <div>
+        <div class="popular-manufacturer">
           <p>Популярные производители:</p>
           <a href="#.html">Все популярные производители</a>
         </div>
-        <ul>
+        <ul class="manufacturer">
           <li>
             <a href="#">
               <img src="img/bosch-logo.jpg" width="126" height="37" alt="Производитель Bosch">
@@ -181,7 +187,7 @@
         </div>
       </section>
       <section class="info-contact">
-        <div>
+        <div class="info-transport">
           <h2>Компания "Техномарт"</h2>
           <p> Настоящий мужской шоппинг начинается здесь!
             Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -206,7 +212,7 @@
       </main>
       <footer>
         <div class="footer-info">
-        <div>
+        <div class="footer-one">
           <img class="logo-footer" src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт">
           <ul>
             <li><a href="">Компания</a></li>
@@ -216,7 +222,7 @@
             <li><a href="">Контакты</a></li>
           </ul>
         </div>
-        <div>
+        <div class="footer-two">
           <p>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <span>
