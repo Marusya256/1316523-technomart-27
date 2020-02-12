@@ -127,9 +127,75 @@ h1 {
   margin-right: 65px;
 }
 
+.user-name {
+  background-color: #ffffff;
+  padding: 14px 69px 11px 47px;
+}
+
+.user-button {
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.user-button ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-button li {
+  padding: 10px;
+}
 
 .banner li {
   list-style: none;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  min-height: 123px;
+  color: white;
+  padding-left: 23px;
+  margin: 20px;
+}
+
+.all-banner {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner a {
+  padding: 12px 24px 14px 24px;
+  width: 135px;
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.material {
+  background-color: #ffbf47;
+}
+
+.tools {
+  background-color: #3bbce3;
+}
+
+.tekhnika {
+  background-color: #dc91d8;
+}
+
+.discount {
+  background-color: #8ed78f;
+}
+
+.delivery {
+  background-color: #ffbf47;
+}
+
+.slide-one {
+  background-image: url(img/slide-image.jpg);
 }
 
 .catalog-info {
@@ -176,8 +242,9 @@ h1 {
   font-size: 17px;
   line-height: 18px;
   text-align: center;
-  padding: 13px;
+  padding: 14px 55px 14px 55px;
   border-radius: 5%;
+  max-height: 38px;
 }
 
 .product {
