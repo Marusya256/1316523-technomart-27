@@ -27,7 +27,7 @@ ul {
   padding-top: 45px;
   padding-bottom: 45px;
   width: 940px;
-  margin-left: 130px;
+  margin-left: 183px;
 }
 
 .button-user {
@@ -38,6 +38,8 @@ ul {
   background-color: #ffffff;
   padding: 11px 25px;
   border: none;
+  margin-right: 10px;
+  box-sizing: border-box;
 }
 
 .color-navigation {
@@ -47,23 +49,36 @@ ul {
 .logo-header {
   background-color: #ee3643;
   padding: 13px 55px;
+  margin-left: 130px;
+  height: 19px;
+  width: 109px;
+  padding: 13px 56px 10px 55px;
 }
 
 .main-menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
   background-color: #293449;
-  margin-left: auto;
-  margin-right: auto;
+  max-height: 42px;
 }
 
 .main-menu li {
   display: inline;
   margin-right: 46px;
   list-style: none;
+}
+
+.main-menu ul {
+  margin-right: 130px;
+}
+
+ul .checkout {
+  background-color: #63a63e;
+  padding: 14px 22px 13px 20px;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -101,6 +116,10 @@ h1 {
   height: 60px;
   margin-left: 130px;
   margin-right: 130px;
+}
+
+.navigation-container {
+  padding-bottom: 60px;
 }
 
 .navigation li {
@@ -208,6 +227,8 @@ h1 {
   justify-content: center;
   margin-left: 100px;
   margin-right: 130px;
+  margin-bottom: 86px;
+  box-sizing: border-box;
 }
 
 .info-transport {
@@ -247,19 +268,29 @@ h1 {
 .footer-info {
   background-color: #32425c;
   color: white;
-  padding: none;
-  margin-left: 130px;
-  margin-right: 130px;
+  box-sizing: border-box;
+  padding-bottom: 53px;
 }
 
 .footer-one {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 130px;
+  padding-right: 130px;
 }
 
 .footer-two {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+.footer-two p {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-info li {
@@ -282,9 +313,16 @@ h1 {
   color:white;
   background-color: #293449;
   display: flex;
-  justify-content: center;
-  margin-left: 130px;
-  margin-right: 130px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 130px;
+  padding-right: 130px;
+  align-items: center;
+}
+
+.footer-contacts p {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-contacts li {
