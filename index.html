@@ -11,7 +11,7 @@
     <header>
       <div class="main-menu">
         <img class="logo-header" src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт">
-        <form>
+        <form action="https://echo.htmlacademy.ru/courses" method="get">
           <label for="search">Поиск:</label>
           <input type="search" name="search" id="search">
         </form>
@@ -49,40 +49,54 @@
       </div>
     </header>
 <main>
-      <section class="banner">
-        <ul>
-          <li>
-            <h3>Материалы</h3>
-            <a href="">На любой вкус</a>
-          </li>
-          <li>
-            <h3>Инструменты</h3>
-            <a href="">На все случаи</a>
-          </li>
-          <li>
-            <h3>Техника</h3>
-            <a href="">Для стройки</a>
-          </li>
-          <li>
-            <h3>Скидка 50%</h3>
-            <a href="">На 350 товаров</a>
-          </li>
-          <li>
-            <h3>Доставка</h3>
-            <a href="">Бесплатно</a>
-          </li>
-        </ul>
+      <section class="banner-slider">
+        <div class="slider">
+          <input type="image" name="btn" id="btn-1" src="img/icon-left.svg" alt="Назад">
+          <input type="image" name="btn" id="btn-2" src="img/icon-right.svg" alt="Вперед">
+          <div class="slider-control">
+            <label for="btn-1"></Label>
+            <label for="btn-2"></Label>
+          </div>
+          <div class="slider-inner">
+            <div class="slider-slides">
+              <div class="slide-one">
+                <p>Дрели</p>
+                <p>Соседям на родость!</p>
+                <a href="catalog.html">Открыть каталог</a>
+              </div>
+              <div class="slide-two">
+                <p>Перфораторы</p>
+                <p>Настоящие мужские игрушки</p>
+                <a href="catalog.html">Открыть каталог</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="all-banner">
+          <ul>
+            <li class="banner material">
+              <h3>Материалы</h3>
+              <a href="">На любой вкус</a>
+            </li>
+            <li class="banner tools">
+              <h3>Инструменты</h3>
+              <a href="">На все случаи</a>
+            </li>
+            <li class="banner tekhnika">
+              <h3>Техника</h3>
+              <a href="">Для стройки</a>
+            </li>
+            <li class="banner discount">
+              <h3>Скидка 50%</h3>
+              <a href="">На 350 товаров</a>
+            </li>
+            <li class="banner delivery">
+              <h3>Доставка</h3>
+              <a href="">Бесплатно</a>
+            </li>
+          </ul>
+        </div>
         <div>
-          <div>
-            <p>Дрели</p>
-            <p>Соседям на родость!</p>
-            <a href="catalog.html">Открыть каталог</a>
-          </div>
-          <div>
-            <p>Перфораторы</p>
-            <p>Настоящие мужские игрушки</p>
-            <a href="catalog.html">Открыть каталог</a>
-          </div>
           <button type="button"><img src="img/icon-left.svg" alt="Назад"></button>
           <button type="button"><img src="img/icon-right.svg" alt="Вперед"> </button>
         </div>
@@ -90,26 +104,26 @@
       <section>
       <div class="popular-product">
         <p>Популярные товары:</p>
-        <a href="#">Все популярные товары</a>
+        <a href="">Все популярные товары</a>
       </div>
         <ul class="product">
           <li>
-            <h3><a href="#">Перфоратор BOSCH BFG 9000</a></h3>
+            <h3><a href="">Перфоратор BOSCH BFG 9000</a></h3>
             <img src="img/bosch-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
             <p><del>32500 Р.</del></p>
           </li>
           <li>
-            <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+            <h3><a href="">Перфоратор BOSCH BFG 3000</a></h3>
             <img src="img/bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             <p><del>22500 Р.</del></p>
           </li>
           <li>
-            <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+            <h3><a href="">Перфоратор BOSCH BFG 6000</a></h3>
             <img src="img/bosch-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             <p><del>30500 Р.</del></p>
           </li>
           <li>
-            <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+            <h3><a href="">Перфоратор BOSCH BFG 2000</a></h3>
             <img src="img/bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000"><br><br>
           </li>
         </ul>
@@ -117,11 +131,11 @@
       <section>
         <div class="popular-manufacturer">
           <p>Популярные производители:</p>
-          <a href="#.html">Все популярные производители</a>
+          <a href="">Все популярные производители</a>
         </div>
         <ul class="manufacturer">
           <li>
-            <a href="#">
+            <a href="">
               <img src="img/bosch-logo.jpg" width="126" height="37" alt="Производитель Bosch">
             </a>
           </li>
@@ -249,7 +263,7 @@
               <a href="mailto:mail@htmlacademy">mail@htmlacademy.ru</a>
             </p>
             <p>Разработано - <br>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
             </p>
         </div>
     </footer>
