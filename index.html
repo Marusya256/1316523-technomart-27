@@ -15,7 +15,7 @@
           <label for="search">Поиск:</label>
           <input type="search" name="search" id="search" class="search">
         </form>
-          <ul>
+          <ul class="list-checkout">
             <li><a href="">Закладки</a></li>
             <li><a href="">Корзина</a></li>
             <li><a href="" class="checkout">Оформить заказ</a></li>
@@ -51,24 +51,26 @@
 <main>
       <section class="banner-slider">
         <div class="slider">
-          <input type="image" name="btn" id="btn-1" src="img/icon-left.svg" alt="Назад">
-          <input type="image" name="btn" id="btn-2" src="img/icon-right.svg" alt="Вперед">
+          <input type="radio" name="btn" id="btn-1">
+          <input type="radio" name="btn" id="btn-2">
           <div class="slider-control">
             <label for="btn-1"></Label>
             <label for="btn-2"></Label>
           </div>
-          <div class="slider-inner">
+          <div class="slider">
             <div class="slider-slides">
-              <div class="slide-one">
-                <p>Дрели</p>
+              <div class="slider-1">
+                <h3>Дрели</h3>
                 <p>Соседям на родость!</p>
-                <a href="catalog.html">Открыть каталог</a>
+                <a class="slider-button" href="">Открыть каталог</a>
               </div>
-              <div class="slide-two">
-                <p>Перфораторы</p>
+              <div class="slider-2">
+                <h3>Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
-                <a href="catalog.html">Открыть каталог</a>
+                <a class="slider-button" href="">Открыть каталог</a>
               </div>
+              <button type="button" class="slider-left"><img src="img/icon-left.svg" alt="Назад"></button>
+              <button type="button" class="slider-right"><img src="img/icon-right.svg" alt="Вперед"> </button>
             </div>
           </div>
         </div>
@@ -95,10 +97,6 @@
               <a href="">Бесплатно</a>
             </li>
           </ul>
-        </div>
-        <div>
-          <button type="button"><img src="img/icon-left.svg" alt="Назад"></button>
-          <button type="button"><img src="img/icon-right.svg" alt="Вперед"> </button>
         </div>
       </section>
       <section>
