@@ -75,6 +75,19 @@ ul {
   margin-right: 130px;
 }
 
+.search {
+  border: none;
+  background-color: #293449;
+}
+
+form:hover {
+  background-color: #212a3a;
+}
+
+.search:focus {
+  background-color: #ffffff;
+}
+
 ul .checkout {
   background-color: #63a63e;
   padding: 14px 22px 13px 20px;
@@ -107,15 +120,33 @@ h1 {
 
 .navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
   background-color: #32425c;
   list-style: none;
-  height: 60px;
-  margin-left: 130px;
-  margin-right: 130px;
+  padding: 0;
+  min-height: 60px;
+  margin-left: 125px;
+  margin-right: 125px;
+  border: 5px solid #32425c;
+  border-bottom-color: #293449;
+}
+
+.navigation a {
+  padding: 18px 27px 23px 27px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navigation a:hover {
+  background-color: #293449;
+}
+
+.navigation a:active {
+  background-color: #293449;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .navigation-container {
@@ -145,6 +176,37 @@ h1 {
 
 .user-button li {
   padding: 10px;
+}
+
+.user-button-index {
+  color: #32425c;
+  padding: 14px 27px 15px 25px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.user-button-index:hover {
+  color: #ee3643;
+}
+
+.user-button-index:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation-user .entrance {
+  padding-left: 45px;
+  position: relative;
+}
+
+.icon-login::before {
+  content: "";
+  position: absolute;
+  left: 85px;
+  top: 12px;
+  width: 22px;
+  height: 19px;
+  background-image: url("img/icon-login.svg");
+  background-repeat: no-repeat;
 }
 
 .banner li {
