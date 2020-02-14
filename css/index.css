@@ -233,6 +233,10 @@ h1 {
   background-repeat: no-repeat;
 }
 
+.slider {
+  position: relative;
+}
+
 .slider-slides {
   width: 620px;
   height: 266px;
@@ -265,6 +269,7 @@ h1 {
 }
 
 .slider-2 {
+  display: none;
   width: 620px;
   height: 266px;
   background-image: url("../img/slide-image-2.jpg");
