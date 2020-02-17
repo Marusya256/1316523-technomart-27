@@ -14,6 +14,24 @@ a {
   color: inherit;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .list-unstyled {
   list-style: none;
 }
@@ -611,7 +629,7 @@ legend {
 
 .range-controls {
   position: relative;
-  height: 41px;
+  height: 80px;
   width: 220px;
   margin-bottom: 10px;
   padding-top: 39px;
@@ -619,6 +637,7 @@ legend {
   border-radius: 5px;
   padding-right: 20px;
   padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .range-controls .scale {
@@ -651,7 +670,7 @@ legend {
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+  left: 140px;
 }
 
 .price-controls {
@@ -672,11 +691,13 @@ legend {
   font-size: 17px;
   text-align: center;
   color: #000000;
-  width: 70px;
+  width: 95px;
+  height: 38px;
   padding: 26px 12px 24px 14px;
   border: none;
   border-radius: 5px;
   background: #f7f3ec;
+  box-sizing: border-box;
 }
 
 .max-price {
@@ -693,7 +714,7 @@ legend {
   padding: 0;
   border: none;
   margin-left: 130px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .list-manufacturer, .list-pitanie {
@@ -725,10 +746,19 @@ legend {
   text-transform: uppercase;
 }
 
+.decorative {
+  height: 1px;
+  width: 220px;
+  background-color: #c5c5c5;
+  margin-left: 130px;
+  margin-top: 25px;
+}
+
 .catalog-items {
   width: 700px;
   margin: 20px auto;
-  margin-left: 450px;
+  margin-left: 390px;
+  box-sizing: border-box;
 }
 
 .catalog-index {
@@ -738,7 +768,8 @@ legend {
 .catalog-item {
   position: relative;
   display: inline-block;
-  width: 218px;
+  width: 220px;
+  min-height: 318px;
   margin-right: 20px;
   margin-bottom: 20px;
   line-height: 20px;
@@ -834,10 +865,6 @@ legend {
   text-decoration: line-through;
 }
 
-.catalog-item .discount-none {
-  color: white;
-}
-
 .catalog-item .price {
   position: relative;
   width: 80px;
@@ -864,8 +891,78 @@ legend {
   background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
+.manufacturer-checkbox {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.manufacturer-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.manufacturer-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pitanie-checkbox {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.pitanie-checkbox input[type="radio"] + .checkbox-indicator-pitanie {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/radio-off.svg);
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pitanie-checkbox input[type="radio"]:checked + .checkbox-indicator-pitanie {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/radio-on.svg);
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
 .paginator {
 margin-left: 370px;
+list-style: none;
+display: flex;
+padding: 0;
+margin-top: 52px;
+}
+
+.paginator li {
+  margin: 0;
+  margin-right: 10px;
 }
 
 .paginator a {
@@ -880,6 +977,7 @@ margin-left: 370px;
   text-align: center;
   align-content: center;
   font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
 }
 
 .paginator .curent {
