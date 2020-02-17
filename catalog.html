@@ -65,26 +65,28 @@
                 <div class="toggle toggle-max"></div>
               </div>
               <div class="price-controls">
-                <label class="min-price"><input name="min-price" type="number" value="0" step="500"></label>
-                <label class="max-price"><input name="max-price" type="number" value="30000" step="500"></label>
+                <label class="min-price"><input name="min-price" type="number" value="0" step="500" min="0"></label>
+                <label class="max-price"><input name="max-price" type="number" value="30000" step="500" max="30000"></label>
               </div>
             </div>
           </fieldset>
+          <div class="decorative"></div>
           <fieldset class="filter-manufacturer">
             <legend>Производители:</legend>
             <ul class="list-manufacturer">
-              <li><label><input type="checkbox" name="bosch">Bosch</label></li>
-              <li><label><input type="checkbox" name="interskol">Интерскол</label></li>
-              <li><label><input type="checkbox" name="makita">Makita</label></li>
-              <li><label><input type="checkbox" name="dewalt">Dewalt</label></li>
-              <li><label><input type="checkbox" name="hitachi">Hitachi</label></li>
+              <li><label class="manufacturer-checkbox"><input type="checkbox" name="bosch" class="visually-hidden"><span class="checkbox-indicator"></span>Bosch</label></li>
+              <li><label class="manufacturer-checkbox"><input type="checkbox" name="interskol" class="visually-hidden"><span class="checkbox-indicator"></span>Интерскол</label></li>
+              <li><label class="manufacturer-checkbox"><input type="checkbox" name="makita" class="visually-hidden"><span class="checkbox-indicator"></span>Makita</label></li>
+              <li><label class="manufacturer-checkbox"><input type="checkbox" name="dewalt" class="visually-hidden"><span class="checkbox-indicator"></span>Dewalt</label></li>
+              <li><label class="manufacturer-checkbox"><input type="checkbox" name="hitachi" class="visually-hidden"><span class="checkbox-indicator"></span>Hitachi</label></li>
             </ul>
           </fieldset>
+          <div class="decorative"></div>
           <fieldset class="filter-pitanie">
             <legend>Питание:</legend>
             <ul class="list-pitanie">
-              <li><label><input type="radio" name="pitanie" value="akk" checked>Аккамуляторные</label></li>
-              <li><label><input type="radio" name="pitanie" value="set">Сетевые</label></li>
+              <li><label class="pitanie-checkbox"><input type="radio" name="pitanie" value="akk" checked class="visually-hidden"><span class="checkbox-indicator-pitanie"></span>Аккамуляторные</label></li>
+              <li><label class="pitanie-checkbox"><input type="radio" name="pitanie" value="set" class="visually-hidden"><span class="checkbox-indicator-pitanie"></span>Сетевые</label></li>
             </ul>
           </fieldset>
           <input class="show" type="submit" value="Показать">
@@ -120,7 +122,7 @@
           </div>
           <div class="image"><img width="218" height="168" src="img/bosch-2000.jpg"></div>
           <div class="title">Перфоратор BOSCH BFG 2000</div>
-          <div class="discount-catalog discount-none">12 500 Р.</div>
+          <div class="discount-catalog"></div>
           <div class="price">12 500 Р.</div>
         </div>
         <div class="catalog-item">
@@ -151,7 +153,7 @@
           </div>
           <div class="image"><img width="218" height="168" src="img/bosch-2000.jpg"></div>
           <div class="title">Перфоратор BOSCH BFG 2000</div>
-          <div class="discount-catalog discount-none">12 500 Р.</div>
+          <div class="discount-catalog"></div>
           <div class="price">12 500 Р.</div>
         </div>
         <div class="catalog-item">
@@ -182,17 +184,17 @@
           </div>
           <div class="image"><img width="218" height="168" src="img/bosch-2000.jpg"></div>
           <div class="title">Перфоратор BOSCH BFG 2000</div>
-          <div class="discount-catalog discount-none">12 500 Р.</div>
+          <div class="discount-catalog"></div>
           <div class="price">12 500 Р.</div>
         </div>
       </div>
       </div>
-      <div class="paginator">
-        <a href="" class="curent">1</a>
-        <a href="">2</a>
-        <a href="">3</a>
-        <a href="" class="next">Следующая</a>
-      </div>
+      <ul class="paginator">
+        <li><a href="" class="curent">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="" class="next">Следующая</a></li>
+      </ul>
     </section>
     <section class="catalog-info">
       <h2>Пара слов о перфораторах</h2>
