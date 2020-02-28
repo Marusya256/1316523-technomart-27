@@ -29,10 +29,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.list-unstyled {
-  list-style: none;
-}
-
 .info-header {
   display: flex;
   justify-content: space-around;
@@ -633,21 +629,24 @@ h1 {
   border: none;
 }
 
-.service {
+.all-service {
   padding: 68px 130px;
   background-color: #f4f7f9;
 }
 
-.service-delivery {
+.service {
   display: flex;
 }
 
 .list-unstyled {
   position: relative;
   padding: 0;
+  list-style: none;
 }
 
 .list-unstyled button {
+  display: inline-block;
+  position: relative;
   color: white;
   background-color: #32425c;
   padding: 21px 140px 20px 23px;
@@ -660,6 +659,12 @@ h1 {
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
+.list-unstyled .curent-index {
+  color: #32425c;
+  background-color: white;
+  border: none;
+}
+
 .list-unstyled::before {
   content: "";
   position: absolute;
@@ -669,11 +674,30 @@ h1 {
   left: 245px;
   bottom: 5px;
   transform: translateY(20%);
+  z-index: 10;
 }
 
-.text-delivery {
+.text-service {
   margin-left: 80px;
   max-width: 275px;
+}
+
+.service-guarantee::before {
+  content: "";
+  position: absolute;
+  height: 261px;
+  width: 468px;
+  background-image: url('../img/guarantee.png');
+  left: 689px;
+}
+
+.service-credit::before {
+  content: "";
+  position: absolute;
+  height: 261px;
+  width: 468px;
+  background-image: url('../img/credit.png');
+  left: 689px;
 }
 
 .service-delivery::before {
@@ -682,7 +706,14 @@ h1 {
   height: 261px;
   width: 468px;
   background-image: url('../img/delivery.png');
-  left: 601px;
+  left: 689px;
+}
+
+.all-credit {
+  display: none;
+}
+.all-guarantee {
+  display: none;
 }
 
 .h2-catalog {
