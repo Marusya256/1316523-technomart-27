@@ -480,9 +480,11 @@ h1 {
   padding-bottom: 73px;
   padding-left: 130px;
   padding-right: 159px;
+  margin: 0;
 }
 
 .popular-product {
+  position: relative;
   display: flex;
   justify-content: space-between;
   background-color: #f9f5f0;
@@ -498,15 +500,21 @@ h1 {
   text-transform: uppercase;
 }
 
-.popular-product a {
+.popular-product button {
+  position: absolute;
+  top: 50%;
+  left: 663px;
+  transform: translateY(-50%);
   color: #ffffff;
   background-color: #ee3643;
   font-size: 17px;
   line-height: 18px;
   text-align: center;
-  padding: 14px 55px 14px 55px;
+  padding: 10px 55px;
   border-radius: 5px;
   max-height: 38px;
+  border: none;
+  box-sizing: border-box;
 }
 
 .product {
@@ -518,6 +526,7 @@ h1 {
 }
 
 .popular-manufacturer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   background-color: #f9f5f0;
@@ -532,7 +541,11 @@ h1 {
   text-transform: uppercase;
 }
 
-.popular-manufacturer a {
+.popular-manufacturer button {
+  position: absolute;
+  top: 50%;
+  left: 663px;
+  transform: translateY(-50%);
   color: #ffffff;
   background-color: #ee3643;
   font-size: 17px;
@@ -540,6 +553,11 @@ h1 {
   text-align: center;
   padding: 13px;
   border-radius: 5px;
+  padding: 10px 55px;
+  border-radius: 5px;
+  max-height: 38px;
+  border: none;
+  box-sizing: border-box;
 }
 
 .manufacturer {
@@ -748,6 +766,24 @@ h1 {
   margin-top: 20px;
 }
 
+form {
+  position: relative;
+}
+
+.filter-button {
+  position: absolute;
+  left: 130px;
+  color: black;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  min-width: 140px;
+  padding: 15px 39px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+
+}
+
 legend {
   font-size: 17px;
   line-height: 30px;
@@ -843,6 +879,10 @@ legend {
   border: none;
   margin-left: 130px;
   margin-top: 25px;
+}
+
+.filter-pitanie {
+  margin-bottom: 80px;
 }
 
 .list-manufacturer, .list-pitanie {
@@ -1105,7 +1145,7 @@ margin-top: 52px;
   margin-right: 10px;
 }
 
-.paginator a {
+.paginator button {
   display: inline-block;
   position: relative;
   border: 1px solid #e5e5e5;
