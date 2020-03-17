@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -410,7 +410,7 @@ h1 {
 }
 
 .slider-slides h3 {
-  font-family: 'Cuprum-Bold', 'Arial-Bold', sans-serif;
+  font-family: "Cuprum-Bold", "Arial-Bold", sans-serif;
   font-size: 36px;
   line-height: 36px;
   text-align: left;
@@ -421,7 +421,7 @@ h1 {
 }
 
 .slider-slides p {
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-align: left;
@@ -644,7 +644,7 @@ h1 {
 .catalog-info h2 {
   font-size: 30px;
   line-height: 30px;
-  font-family:"Cuprum", 'Arial', sans-serif;
+  font-family:"Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
   padding-top: 67px;
   padding-left: 130px;
@@ -653,7 +653,7 @@ h1 {
 .catalog-info p {
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans", 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   padding-bottom: 73px;
   padding-left: 130px;
   padding-right: 159px;
@@ -677,7 +677,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.popular-product button {
+.popular-product a {
   position: absolute;
   top: 50%;
   left: 663px;
@@ -699,7 +699,7 @@ h1 {
 }
 
 .product h3 {
-  font-family: "PT Sans Bold", 'Arial Bold', sans-serif;
+  font-family: "PT Sans Bold", "Arial Bold", sans-serif;
 }
 
 .popular-manufacturer {
@@ -718,7 +718,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.popular-manufacturer button {
+.popular-manufacturer a {
   position: absolute;
   top: 50%;
   left: 663px;
@@ -829,7 +829,7 @@ h1 {
 }
 
 .info-contact p {
-  font-family: "PT Sans", 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   padding-bottom: 25px;
 }
 
@@ -1515,7 +1515,7 @@ margin-top: 52px;
   margin-right: 10px;
 }
 
-.paginator button {
+.paginator a {
   display: inline-block;
   position: relative;
   border: 1px solid #e5e5e5;
@@ -1530,12 +1530,12 @@ margin-top: 52px;
   text-transform: uppercase;
 }
 
-.paginator button:hover,
+.paginator a:hover,
 .filter-button:hover {
   border-color: #bdc6ca;
 }
 
-.paginator button:active,
+.paginator a:active,
 .filter-button:active {
   border-color: #ee3643;
 }
@@ -1752,7 +1752,7 @@ margin-top: 52px;
   padding-bottom: 55px;
   font-size: 30px;
   line-height: 30px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .modal-check p::before {
@@ -1767,7 +1767,6 @@ margin-top: 52px;
 
 .modal-button-div{
   background-color: ;
-  padding:
 }
 
 .modal-button {
