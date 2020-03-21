@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Тeхномарт</title>
-    <link href ="https://fonts.googleapis.com/css?family= Cuprum: 400,700 | PT + Sans: 400,700 & display = swap & subset = cyrillic" rel = "stylesheet">
+    <link href ="https://fonts.googleapis.com/css?family=Cuprum:400,700PT+Sans:400,700&display=swap&subset=cyrillic" rel = "stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
   </head>
@@ -25,17 +25,17 @@
         <div class="color-navigation">
         <section class="info-header">
           <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <div class="contact-header">
-          <a class="phone-header" href="tel:+78125550555">+7 (812) 555 05 55</a>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        </div>
+          <div class="contact-header">
+            <a class="phone-header" href="tel:+78125550555">+7 (812) 555 05 55</a>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
           <div class="user-button">
-          <a href="#" class="user-name">Равшан Джамшутович</a>
-          <ul>
-            <li><a href="#"><ins>Мои заказы</ins></a></li>
-            <li class="decoration-point"></li>
-            <li><a href="#"><ins>Личный кабинет</ins></a></li>
-          </ul>
+            <a href="#" class="user-name">Равшан Джамшутович</a>
+            <ul>
+              <li><a href="#"><ins>Мои заказы</ins></a></li>
+              <li class="decoration-point"></li>
+              <li><a href="#"><ins>Личный кабинет</ins></a></li>
+            </ul>
           </div>
         </section>
         <nav class="navigation">
@@ -60,18 +60,23 @@
     </ul>
     <h2 class="h2-catalog">Перфораторы</h2>
     <section class="filter-sorting">
+      <h3 class="visually-hidden">Сортировка</h3>
         <p class="p-filter">Фильтр:</p>
-      <div class="sorting">
-        <p>Сортировка:</p>
-        <ul class="list-sorting">
-          <li><a class="sorting-curent" href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По функционалу</a></li>
-        </ul>
-        <div class="triangle"></div>
-      </div>
+        <div class="sorting">
+          <p>Сортировка:</p>
+          <ul class="list-sorting">
+            <li><a class="sorting-curent" href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По функционалу</a></li>
+          </ul>
+          <ul class="triangle">
+            <li class="up-dir up-dir-active"></li>
+            <li class="down-dir"></li>
+          </ul>
+        </div>
     </section>
     <section class="filters-catalog">
+      <h3 class="visually-hidden">Фильты</h3>
       <div class="filters">
         <form action="https://echo.htmlacademy.ru/courses" method="post">
           <fieldset class="filter-item">
@@ -109,11 +114,11 @@
               <li><label class="pitanie-checkbox"><input type="radio" name="pitanie" value="set" class="visually-hidden"><span class="checkbox-indicator-pitanie"></span>Сетевые</label></li>
             </ul>
           </fieldset>
-          <button class="filter-button show" type="submit">Показать</button>
+          <button class="button-show" type="submit">Показать</button>
         </form>
       </div>
-      <ul class="catalog-items">
-        <div class="row">
+      <div>
+        <ul class="catalog-items">
           <li class="catalog-item">
             <div class="actions">
               <a href="#" class="buy">Купить</a>
@@ -207,8 +212,8 @@
             <div class="discount-catalog"></div>
             <div class="price">12 500 Р.</div>
           </li>
-        </div>
-      </ul>
+        </ul>
+      </div>
       <ul class="paginator">
         <li><a href="#" class="curent">1</a></li>
         <li><a href="#">2</a></li>
@@ -265,12 +270,14 @@
       </div>
     </footer>
     <section class="modal modal-check">
+      <h3 class="visually-hidden">Товар</h3>
       <p> Товар добавлен в корзину!</p>
-      <div class="catalog-modal-button modal-button-div">
+      <div class="catalog-modal-button">
         <button type="button" class="modal-button button-red">Оформить заказ</button>
           <button type="button" class="modal-button button-white">Продолжить покупки</button>
       </div>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
+    <script src="../js/main.js"></script>
   </body>
 </html>
