@@ -1202,13 +1202,14 @@ h1 {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  min-height: 1150px;
+  height: 1150px;
   max-width: 1050px;
 }
 
 .page-catalog {
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .filters {
@@ -1377,22 +1378,21 @@ legend {
 }
 
 .div-catalog {
-  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   max-height: 900px;
   top: 0;
+  box-sizing: border-box;
 }
 
 .catalog-items {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 20px auto;
   box-sizing: border-box;
   padding: 0;
-  margin-left: 35px;
-  max-height: 1300px;
+  margin-left: -15px;
 }
 
 .catalog-index {
@@ -1710,11 +1710,13 @@ legend {
 }
 
 .list-footer-one {
+  display: flex;
   margin: 40px;
   padding: 0;
 }
 
 .list-footer-two {
+  display: flex;
   margin-left: 63px;
   padding: 0;
 }
