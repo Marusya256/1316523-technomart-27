@@ -52,15 +52,22 @@
       </div>
     </header>
   <main>
-    <ul class="breadcrumbs">
-      <li><a href="index.html" class="li-home icon-home"></a></li>
-      <li><a href="#">Каталог</a></li>
-      <li><a href="#">Инструмент</a></li>
-      <li><a href="#">Перфораторы</a></li>
-    </ul>
-    <h2 class="h2-catalog">Перфораторы</h2>
+    <section class="section-breadcrumbs">
+      <div class="breadcrumbs">
+        <ul>
+          <li><a href="index.html" class="li-home icon-home"></a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Перфораторы</a></li>
+        </ul>
+      </div>
+    </section>
+    <div class="div-h2-catalog">
+      <h2 class="h2-catalog">Перфораторы</h2>
+    </div>
     <section class="filter-sorting">
       <h3 class="visually-hidden">Сортировка</h3>
+      <div class="div-filter">
         <p class="p-filter">Фильтр:</p>
         <div class="sorting">
           <p>Сортировка:</p>
@@ -74,6 +81,7 @@
             <li class="down-dir"></li>
           </ul>
         </div>
+      </div>
     </section>
     <section class="filters-catalog">
       <h3 class="visually-hidden">Фильты</h3>
@@ -117,7 +125,7 @@
           <button class="button-show" type="submit">Показать</button>
         </form>
       </div>
-      <div>
+      <div class="div-catalog">
         <ul class="catalog-items">
           <li class="catalog-item">
             <div class="actions">
@@ -222,10 +230,13 @@
       </ul>
     </section>
     <section class="catalog-info">
+      <h3 class="visually-hidden">Информация о перфораторах</h3>
+      <div class="div-catalog-info">
       <h2>Пара слов о перфораторах</h2>
       <p> Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
         В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+    </div>
     </section>
   </main>
   <footer>
@@ -261,12 +272,14 @@
             <li><a href="#" class="social social-fb"></a></li>
             <li><a href="#" class="social social-ins"></a></li>
           </ul>
-          <p>Обратная связь:<br>
-            <a class="footer-email" href="mailto:mail@htmlacademy">mail@htmlacademy.ru</a>
-          </p>
-          <p>Разработано - <br>
-            <a class="footer-phone" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-          </p>
+          <div class="email-phone">
+            <p>Обратная связь:<br>
+              <a class="footer-email" href="mailto:mail@htmlacademy">mail@htmlacademy.ru</a>
+            </p>
+            <p>Разработано - <br>
+              <a class="footer-phone" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            </p>
+          </div>
       </div>
     </footer>
     <section class="modal modal-check">
