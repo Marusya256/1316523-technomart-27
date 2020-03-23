@@ -100,6 +100,9 @@ input[type="radio"].visually-hidden {
 }
 
 .list-checkout {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
   display: flex;
   list-style: none;
   align-items: center;
@@ -133,6 +136,7 @@ input[type="radio"].visually-hidden {
 .form-search:hover {
   background-color: #212a3a;
   height: inherit;
+  height: 42px;
 }
 
 .search:focus {
@@ -229,6 +233,7 @@ ul .checkout {
 }
 
 h1 {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -240,6 +245,7 @@ h1 {
 }
 
 .phone-header {
+  font-family: "Cuprum", "Arial", sans-serif;
   position: relative;
   font-size: 21px;
   line-height: 21px;
@@ -328,7 +334,11 @@ h1 {
   left: 15px;
 }
 
-.user-name::after {
+.icon-exit {
+  position: relative;
+}
+
+.icon-exit::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -338,11 +348,8 @@ h1 {
   right: 15px;
 }
 
-.user-name::after:hover {
-  background-color: #32425c;
-}
-
 .user-button {
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
   font-size: 16px;
   line-height: 18px;
@@ -402,7 +409,7 @@ h1 {
   content: "";
   position: absolute;
   display: block;
-  right: 85px;
+  right: 75px;
   top: 50%;
   transform: translateY(-50%);
   width: 22px;
@@ -425,7 +432,7 @@ h1 {
   content: "";
   position: absolute;
   display: block;
-  right: 85px;
+  right: 75px;
   top: 50%;
   transform: translateY(-50%);
   width: 22px;
@@ -575,7 +582,7 @@ h1 {
 }
 
 .slider-slides h3 {
-  font-family: "Cuprum-Bold", "Arial-Bold", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   text-align: left;
@@ -733,7 +740,7 @@ h1 {
 }
 
 .product h3 {
-  font-family: "PT Sans Bold", "Arial Bold", sans-serif;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
 }
 
 .section-manufacturer {
@@ -837,6 +844,7 @@ h1 {
 }
 
 .map p {
+  font-family: "PT Sans", "Arial", sans-serif;
   max-width: 195px;
 }
 
@@ -868,6 +876,7 @@ h1 {
 }
 
 .info-contact h2 {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-align: left;
@@ -877,10 +886,13 @@ h1 {
 
 .info-contact p {
   font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
   padding-bottom: 25px;
 }
 
 .button-info-contact {
+  font-family: "Cuprum", "Aril", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -894,7 +906,6 @@ h1 {
 .section-service {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   margin: 0 auto;
   background-color: #f4f7f9;
 }
@@ -909,8 +920,30 @@ h1 {
   position: relative;
 }
 
+.all-service h2 {
+  font-size: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.service h3 {
+  color: #32425c;
+  font-size: 36px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
 .all-service p {
   margin-bottom: 70px;
+}
+
+.service-h2-p {
+  position: relative;
+  width: 500px;
+  left: 0;
+  max-width: 450px;
 }
 
 .service {
@@ -920,11 +953,11 @@ h1 {
 }
 
 .list-unstyled {
-  position: absolute;
+  position: relative;
   padding: 0;
   list-style: none;
-  left: 130px;
-  bottom: 99px;
+  left: -260px;
+  bottom: 60px;
 }
 
 .list-unstyled button {
@@ -956,7 +989,7 @@ h1 {
   width: 10px;
   height: 289px;
   left: 245px;
-  bottom: 5px;
+  bottom: 15px;
   transform: translateY(20%);
   z-index: 10;
 }
@@ -966,8 +999,10 @@ h1 {
 }
 
 .text-service {
-  margin-left: 80px;
+  position: relative;
   max-width: 275px;
+  left: -200px;
+  bottom: 60px;
 }
 
 .service-guarantee::before {
@@ -988,13 +1023,13 @@ h1 {
   left: 689px;
 }
 
-.service-delivery::before {
+.text-delivery::before {
   content: "";
   position: absolute;
   height: 261px;
   width: 468px;
   background-image: url('../img/delivery.png');
-  left: 689px;
+  left: 200px;
 }
 
 .all-credit {
@@ -1325,7 +1360,8 @@ legend {
   margin-right: 5px;
 }
 
-.filter-manufacturer, .filter-pitanie {
+.filter-manufacturer,
+.filter-pitanie {
   margin: 0;
   padding: 0;
   border: none;
@@ -1337,7 +1373,8 @@ legend {
   margin-bottom: 80px;
 }
 
-.list-manufacturer, .list-pitanie {
+.list-manufacturer,
+.list-pitanie {
   font-size: 15px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: 20px;
@@ -1349,7 +1386,8 @@ legend {
   margin-top: 5px;
 }
 
-.list-manufacturer li, .list-pitanie li {
+.list-manufacturer li,
+.list-pitanie li {
   margin-bottom: 15px;
 }
 
@@ -1383,6 +1421,7 @@ legend {
   max-height: 900px;
   top: 0;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .catalog-items {
@@ -1496,6 +1535,9 @@ legend {
 }
 
 .catalog-item .title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
   min-height: 40px;
   padding: 0 25px;
   margin-top: 10px;
@@ -1964,7 +2006,7 @@ legend {
 }
 
 .modal-letter label {
-  font-family: "Cuprum", "Arail", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
   color: #000000;
