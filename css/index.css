@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 1050px;
 }
 
 a {
@@ -67,7 +68,6 @@ input[type="radio"].visually-hidden {
   padding: 13px 55px;
   height: 19px;
   width: 109px;
-  padding: 13px 56px 10px 55px;
   border-bottom: 5px solid #b52933;
   cursor: pointer;
 }
@@ -97,7 +97,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-menu a {
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 .list-checkout {
@@ -109,15 +109,16 @@ input[type="radio"].visually-hidden {
   align-items: center;
   justify-content: center;
   padding: 0;
+  left: 40px;
+  position: relative;
 }
 
 .main-menu input {
   color: #000000;
   font-family: "Cuprum", "Arial", sans-serif;
   width: 225px;
-  height: 42px;
+  height: 40px;
   position: relative;
-  margin-top: -10px;
 }
 
 .search {
@@ -127,17 +128,15 @@ input[type="radio"].visually-hidden {
 
 .form-search {
   position: relative;
-  padding-left: 38px;
-  padding-top: 10px;
+  padding-left: 44px;
   padding-right: 10px;
   height: 42px;
 }
 
-.search:hover,
-.form-search:hover {
+.search:hover {
   background-color: #212a3a;
   height: inherit;
-  height: 42px;
+  height: 40px;
 }
 
 .search:focus {
@@ -161,7 +160,7 @@ input[type="search"]::-moz-placeholder {
 }
 
 .list-checkout a {
-  padding: 13px 22px 12px 20px;
+  padding: 13px 22px 12px 35px;
 }
 
 ul .checkout {
@@ -184,7 +183,7 @@ ul .checkout {
 .icon-bookmark,
 .icon-cart {
   position: relative;
-  padding-left: 28px;
+  padding-left: 38px;
 }
 
 .icon-bookmark::before {
@@ -193,7 +192,7 @@ ul .checkout {
   width: 16px;
   height: 16px;
   background-image: url(../img/icon-bookmark.svg);
-  left: 0;
+  left: 10px;
   opacity: 30%;
   background-repeat: no-repeat;
 }
@@ -204,7 +203,7 @@ ul .checkout {
   width: 16px;
   height: 16px;
   background-image: url(../img/icon-cart.svg);
-  left: 0;
+  left: 10px;
   opacity: 30%;
   background-repeat: no-repeat;
 }
@@ -214,8 +213,9 @@ ul .checkout {
   position: absolute;
   width: 16px;
   height: 16px;
-  left: 5px;
+  left: 15px;
   opacity: 30%;
+  top: 10px;
   background-repeat: no-repeat;
 }
 
@@ -231,6 +231,18 @@ ul .checkout {
 
 .list-checkout-li:active {
   background-color: #161d29;
+}
+
+.checkout-cart-catalog {
+  background-color: #ee3643;
+}
+
+.checkout-cart-catalog:hover {
+  background-color: #ca2c37;
+}
+
+.checkout-cart-catalog:active {
+  background-color: #ba2732;
 }
 
 h1 {
@@ -291,7 +303,8 @@ h1 {
   justify-content: center;
   background-color: #32425c;
   padding: 0;
-  height: 55px;
+  flex-wrap: wrap;
+  min-height: 55px;
   min-width: 940px;
   margin: 0 auto;
   border-bottom: 5px solid #293449;
@@ -338,9 +351,18 @@ h1 {
   padding: 0px;
 }
 
+.user-name-div {
+  position: relative;
+  left: 24px;
+  max-width: 299px;
+}
+
 .user-name {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
   background-color: #ffffff;
-  padding: 14px 69px 11px 47px;
+  padding: 14px 50px 11px 40px;
   position: relative;
 }
 
@@ -374,6 +396,8 @@ h1 {
   font-size: 16px;
   line-height: 18px;
   cursor: pointer;
+  position: relative;
+  top: 17px;
 }
 
 .user-button ul {
@@ -382,6 +406,7 @@ h1 {
   list-style: none;
   padding: 0;
   position: relative;
+  left: 20px;
 }
 
 .user-button li:hover {
@@ -445,6 +470,7 @@ h1 {
 .navigation-user {
   position: relative;
   left: 25px;
+  top: 2px;
 }
 
 .navigation-user .entrance {
@@ -618,7 +644,6 @@ h1 {
 .slider-slides {
   width: 620px;
   height: 266px;
-  position: absolute;
   color: white;
   left: -50px;
   bottom: 185px;
@@ -651,15 +676,19 @@ h1 {
   background-repeat: no-repeat;
   left: 130px;
   top: 202px;
+  left: 78px;
+  top: 198px;
 }
 
 .slider-1 {
   background-image: url(../img/slide-image.jpg);
+  background-color: #dee3e4;
 }
 
 .slider-2 {
   display: none;
   background-image: url(../img/slide-image-2.jpg);
+  background-color: #dee3e4;
 }
 
 .slider-button {
@@ -871,7 +900,7 @@ h1 {
   margin-bottom: 86px;
   box-sizing: border-box;
   height: 455px;
-  left: 10px;
+  left: 15px;
 }
 
 .info-transport {
@@ -905,10 +934,7 @@ h1 {
 }
 
 .map p {
-  padding-bottom: 40px;
-}
-
-.map p {
+  padding-bottom: 30px;
   font-family: "PT Sans", "Arial", sans-serif;
   max-width: 195px;
 }
@@ -984,7 +1010,15 @@ h1 {
 .map .button-info-contact {
   bottom: 5px;
   padding: 10px 65px;
-  top: 40px;
+  top: 30px;
+}
+
+.info-contact .button-info-contact:hover {
+  background-color: #ca2c37;
+}
+
+.info-contact .button-info-contact:active {
+  background-color: #ba2732;
 }
 
 .section-service {
@@ -995,7 +1029,7 @@ h1 {
 }
 
 .all-service {
-  padding: 68px 130px;
+  padding: 68px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1243,7 +1277,7 @@ h1 {
   text-align: left;
   text-transform: uppercase;
   color: #32425c;
-  padding: 32px 30px;
+  padding: 0px 30px;
 }
 
 .filter-sorting,
@@ -1385,7 +1419,7 @@ h1 {
   margin-left: -80px;
   position: relative;
   left: 30px;
-  top: -100px;
+  top: -140px;
 }
 
 .filter-item {
@@ -1863,32 +1897,31 @@ legend {
   background-color: #32425c;
   color: white;
   box-sizing: border-box;
-  padding-bottom: 53px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   position: relative;
   justify-content: center;
-  height: 190px;
+  height: 223px;
 }
 
 .footer-one {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  padding-left: 130px;
-  padding-right: 130px;
+  padding: 0;
   margin: 0 auto;
   position: relative;
-  left: 90px;
+  left: 110px;
+  top: -20px;
 }
 
 .footer-two {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  padding-left: 130px;
-  padding-right: 130px;
+  padding-left: 0;
   margin: 0 auto;
   position: relative;
   left: 100px;
@@ -1914,7 +1947,8 @@ legend {
 
 .list-footer-one {
   display: flex;
-  margin: 40px;
+  margin: 40px 0;
+  margin-right: 70px;
   padding: 0;
   position: relative;
   right: 35px;
@@ -1935,7 +1969,7 @@ legend {
   margin-right: 200px;
   border-bottom: 5px solid #b52933;
   position: relative;
-  left: 15px;
+  left: 0px;
 }
 
 .footer-contacts {
@@ -1944,7 +1978,7 @@ legend {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  padding: 40px 130px 35px 130px;
+  padding: 40px 0px 35px;
   align-items: center;
   margin: 0 auto;
   position: relative;
