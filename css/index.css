@@ -2139,7 +2139,8 @@ legend {
   display: none;
 }
 
-.modal-close {
+.modal-close,
+.modal-close-letter {
   position: absolute;
   top: 9px;
   right: 9px;
@@ -2150,14 +2151,6 @@ legend {
   cursor: pointer;
   text-indent: -10000px;
   background-image: url(../img/icon-close.svg);
-}
-
-.modal-close::before {
-  transform: rotate(45deg);
-}
-
-.modal-close::after {
-  transform: rotate(-45deg);
 }
 
 .catalog-modal-button {
